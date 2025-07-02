@@ -4,6 +4,14 @@ import matplotlib.pyplot as plt
 import os
 import glob
 
+st.set_page_config(
+    page_title="Stock Analysis Dashboard",
+    page_icon="📊",
+    layout="wide"
+)
+
+st.image("logo.png", width=200)
+
 # --- Historical snapshots ---
 historical_files = glob.glob("analysis_results_*.csv")
 historical_files = sorted(historical_files, reverse=True)
